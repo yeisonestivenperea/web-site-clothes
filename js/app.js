@@ -7,21 +7,21 @@ async function getProducts() {
 
     products.forEach((product) => {
       container = document.getElementById("cards-container");
-      console.log(products);
-      console.log(product.images[0]);
       const colDiv = document.createElement("div");
       colDiv.classList.add("col");
 
       colDiv.innerHTML = `<div class="py-3">
     <div class="card" style="width: 18rem">
-                  <img src="${product.images[2]}" class="card-img-top" alt="..." />
+                  <img src="${product.images[2]}" class="card-img-top" alt="img-${product.title}" />
                   <div class="card-body">
                     <h5 class="card-title">${product.title}</h5>
                     <p class="card-text">
-                      Some quick example text to build on the card title and make up
-                      the bulk of the card's content.
+                      ${product.description.split(" ").slice(0, 10).join(" ")}
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                     <p class="card-text fw-bold">
+                      $${product.price}
+                    </p>
+                    <button class="btn btn-primary">add to cart</button>
                   </div>
                 </div>
             </div>`;
