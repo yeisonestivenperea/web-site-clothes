@@ -5,8 +5,6 @@ async function getProducts() {
       "https://fakestoreapi.com/products?limit=12"
     );
     const products = await response.json();
-    console.log(products);
-
 
     products.forEach((product) => {
       container = document.getElementById("cards-container");
