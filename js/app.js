@@ -1,3 +1,4 @@
+document.getElementById("currentYear").textContent = "© " + new Date().getFullYear() + " Web Site Clothes. Todos los derechos reservados";
 async function getProducts() {
   try {
     const response = await fetch(
