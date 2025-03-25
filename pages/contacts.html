@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web site Clothes - Contacts</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="icon" type="image/x-icon" href="../img/store.ico" />
+  </head>
+  <body class="container-fluid">
+
+    <!-- Navbar -->
+    <nav class="container-fluid navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Store Clothes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                aria-current="page"
+                href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./contacts.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="py-2 text-center">Contacts</h1>
+
+    <div class="py-4 d-flex justify-content-center align-items-center">
+      <div class="card w-75 mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Contact us.</h5>
+          <form>
+            <div class="mb-3">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="inputSubject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="inputSubject">
+            </div>
+            <div class="mb-3">
+              <label for="inputMessage" class="form-label">Subject</label>
+              <textarea name="inputMessage" class="form-control" id="inputMessage"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Scripts -->
+    <script
+      src="../js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
